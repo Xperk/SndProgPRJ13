@@ -47,7 +47,6 @@ class Signal:
         compressed_data = np.sign(self.data) * np.maximum(0, np.abs(self.data) - threshold)
         return Signal(compressed_data, self.sr)
 
-
     def resample(self,n):
         self.data = resample(self.data, len(self.data)*n)
 

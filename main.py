@@ -9,23 +9,23 @@ if __name__ == '__main__':
 
     data3 = [12, 10, 6, 10, 18, 4, 2, 4, 10, 6, 2, 6]
     signal3 = Signal(data3, sr)
-
+    signal3.plot()
     # signal1.shift_time(10)
 
     # signal1.flipp_time()
 
     # signal1.multiply(signal2)
 
-    # signal3.resample(2)
+    # signal3.resample(10)
 
     # signal1.convolve(signal2)
 
-    signal1.compress(0.5)
+    # signal1.compress(0.5)
 
     # energy = signal1.energy()
 
     # print(energy)
-    signal1.plot()
+    signal3.compress(10).plot()
 
 
 
